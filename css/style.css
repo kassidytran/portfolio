@@ -116,9 +116,9 @@ nav a:hover {
     top: 70px;
 }
 .scroll-container {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 200px;
-    padding: 10px 50px;
+    padding: 0px 50px 10px;
     display: flex;
     flex-flow: row;
     align-items: center;
