@@ -5,12 +5,13 @@ body {
     margin: 0;
     background-color: #f9f9f9;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: Lexend, sans-serif;
     font-weight: 400;
 }
 h1 {
     font-size: 64px;
+    color: #033962;
 }
 p {
     font-family: Roboto, sans-serif;
@@ -115,10 +116,11 @@ nav a:hover {
     left: 280px;
     top: 70px;
 }
+/*
 .scroll-container {
     margin-top: 0px;
     margin-bottom: 200px;
-    padding: 0px 50px 10px;
+    padding: 0px 50px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -140,10 +142,21 @@ nav a:hover {
     border-radius: 30px;
     text-align: center;
 }
+*/
+
+
+
+
+
+
+
+
+
+
 /* work section*/
 .work {
     margin-top: 0 auto;
-    padding: 180px 100px 100px;
+    padding: 100px;
 }
 .section-title {
     font-family: Lexend, sans-serif;
@@ -181,11 +194,17 @@ nav a:hover {
 }
 .description-text h2 {
     color: #033962;
+    font-family: Fira Mono, monospace;
+    font-size: 16px;
+    margin: 0;
+}
+.description-text h3 {
+    color: #033962;
     font-family: Lexend, sans-serif;
     font-size: 24px;
     margin-bottom: 0px;
 }
-.description-text h3 {
+.description-text h4 {
     font-family: Roboto, sans-serif;
     color: #033962;
     font-size: 18px;
@@ -196,6 +215,14 @@ nav a:hover {
     padding: 8px 16px;
     border-radius: 7px;
     background-color: #FFA600;
+    border: 3px solid #FFA600;
+}
+.button:hover {
+    border: 3px solid #FFA600;
+    background-color: #F9F9F9;
+}
+.button:hover a {
+    color: #FFA600;
 }
 
 
@@ -330,10 +357,81 @@ nav a:hover {
 
 
 /* case study article styling */
+article {
+    border: 0px solid red;
+}
+article h1 {
+    margin: 20px 0px;
+}
+article h2, h3, h4 {
+    border: 0px solid black;
+    margin: 20px 0px;
+    color: #033962;
+}
+article p {
+    font-size: 20px;
+    
+}
+article ul {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+}
+article blockquote {
+    font-family: Lexend, sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+.article-info {
+    padding: 50px 200px;
+}
+.article-info h3 {
+    font-family: Fira Mono;
+}
 
 
 
 
+
+
+.case-study-section {
+    border: 0px solid green;
+    padding: 50px 200px;
+
+}
+.case-study-section img {
+    max-width: 100%;
+}
+.case-study-section h3 {
+    font-size: 32px;
+}
+.case-study-section h4 {
+    font-size: 20px;
+}
+
+
+.archetype-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.archetype-container img {
+    max-width: 80%;
+    border: 2px solid #033962;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+.user-journey-yelp {
+    max-width: 50%;
+    text-align: center;
+}
 
 
 
