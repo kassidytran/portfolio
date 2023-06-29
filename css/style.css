@@ -10,7 +10,7 @@ h1, h2, h3, h4 {
     font-weight: 400;
 }
 h1 {
-    font-size: 64px;
+    font-size: 48px;
     color: #033962;
 }
 p {
@@ -167,6 +167,7 @@ nav a:hover {
 }
 /* case study - overlapping cards */
 .case-study-container {
+    border: 1px solid black;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 80px;
@@ -174,8 +175,8 @@ nav a:hover {
     gap: 30px;
     position: relative;
 }
-.cover-img {
-    max-width: 50%;
+.cover-img img {
+    max-width: 60%;
 }
 .description-container {
     position: absolute;
@@ -192,6 +193,7 @@ nav a:hover {
     padding: 40px;
     max-height: 50%;
 }
+
 .description-text h2 {
     color: #033962;
     font-family: Fira Mono, monospace;
@@ -370,11 +372,12 @@ article h2, h3, h4 {
 }
 article p {
     font-size: 20px;
-    
+    font-weight: 300;
 }
 article ul {
     font-family: Roboto, sans-serif;
     font-size: 20px;
+    font-weight: 300;
 }
 article blockquote {
     font-family: Lexend, sans-serif;
@@ -386,6 +389,9 @@ article blockquote {
 }
 .article-info h3 {
     font-family: Fira Mono;
+}
+.article-info img {
+    max-width: 100%;
 }
 
 
@@ -406,7 +412,36 @@ article blockquote {
 }
 .case-study-section h4 {
     font-size: 20px;
+    text-decoration: underline;
 }
+.case-study-section a {
+    color: #033962;
+    font-family: Roboto, sans-serif;
+}
+.case-study-section a:hover {
+    color: #033962;
+    font-family: Roboto, sans-serif;
+    text-decoration: underline;
+}
+.case-study-section figcaption {
+    color: #033962;
+    font-family: Fira Mono, monospace;
+    background-color: #D4E6F1;
+    text-align: center;
+}
+.uinv-lowfi-prototype-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.uinv-hifi-prototype-container {
+    text-align: center;
+}
+
+
+
+
 
 
 .archetype-container {
@@ -418,9 +453,10 @@ article blockquote {
 }
 .archetype-container img {
     max-width: 80%;
-    border: 2px solid #033962;
+    border: 1px solid #EDF4F8;
     border-radius: 20px;
     margin: 20px 0px;
+    box-shadow: 12px 12px 38px -7px rgba(0,0,0,0.1);
 }
 
 
