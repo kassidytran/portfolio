@@ -116,33 +116,7 @@ nav a:hover {
     left: 280px;
     top: 70px;
 }
-/*
-.scroll-container {
-    margin-top: 0px;
-    margin-bottom: 200px;
-    padding: 0px 50px;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-.see-my-work {
-    font-family: Lexend, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    color: #033962;
-    text-decoration: none;
-    letter-spacing: 3px;
-}
-.bouncing-arrow {
-    background-color: #FFA600;
-    color: #F9F9F9;
-    padding: 10.5px 11.5px 10.5px 11.5px;
-    border-radius: 30px;
-    text-align: center;
-}
-*/
+
 
 
 
@@ -157,6 +131,8 @@ nav a:hover {
 .work {
     margin-top: 0 auto;
     padding: 100px;
+    display: flex;
+    flex-flow: column;
 }
 .section-title {
     font-family: Lexend, sans-serif;
@@ -165,35 +141,30 @@ nav a:hover {
     color: #033962;
     margin-bottom: 50px;
 }
-/* case study - overlapping cards */
+
+
+
+
+
+/* case study section */
+
 .case-study-container {
-    border: 1px solid black;
     margin-right: 50px;
     margin-left: 50px;
     margin-bottom: 80px;
     display: flex;
-    gap: 30px;
-    position: relative;
+    flex-flow: row;
+    align-items: center;
+    gap: 200px;
 }
-.cover-img img {
-    max-width: 60%;
-}
-.description-container {
-    position: absolute;
-    top: 110px;
-    left: 700px;
-}
-.description {
-    background-color: #B4D8E7;
+.case-study-container img {
+    max-width: 50%;
     border-radius: 20px;
-    display: flex; 
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 40px;
-    max-height: 50%;
 }
 
+.description {
+    max-width: 50%
+}
 .description-text h2 {
     color: #033962;
     font-family: Fira Mono, monospace;
@@ -213,17 +184,17 @@ nav a:hover {
     font-weight: 300;
     margin-bottom: 40px;
 }
-.button {
+.button a {
+    border: 1px solid black;
     padding: 8px 16px;
     border-radius: 7px;
     background-color: #FFA600;
     border: 3px solid #FFA600;
+    
 }
-.button:hover {
+.button a:hover {
     border: 3px solid #FFA600;
     background-color: #F9F9F9;
-}
-.button:hover a {
     color: #FFA600;
 }
 
@@ -438,6 +409,26 @@ article blockquote {
 .uinv-hifi-prototype-container {
     text-align: center;
 }
+.yelp-menu {
+    display: flex;
+}
+.yelp-menu figure {
+    max-width: 50%;
+}
+.yelp-community {
+    display: flex;
+    justify-content: center;
+}
+.yelp-community figure {
+    max-width: 20%;
+}
+.user-journey-yelp {
+    display: flex;
+    justify-content: center;
+}
+.user-journey-yelp figure {
+    max-width: 70%;
+}
 
 
 
@@ -464,10 +455,7 @@ article blockquote {
 
 
 
-.user-journey-yelp {
-    max-width: 50%;
-    text-align: center;
-}
+
 
 
 
