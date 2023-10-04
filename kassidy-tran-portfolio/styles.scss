@@ -1,0 +1,711 @@
+// sass variables 
+//color
+$bg-color: #FFFDF7;
+$text-color: #021620;
+$primary-color: #DCEDF6;
+$secondary-color: #E8EBFF;
+$gradient: linear-gradient(55deg, #8bc1de, #B0C9F4, #B1C1F8, #B1BBFC);
+$link-color: #8bc1de;
+$border: 1px solid black;
+//font 
+$primary-font: Be Vietnam Pro, sans-serif;
+// spacing
+$section-padding: 100px 250px;
+$section-padding-md: 50px 120px;
+$section-padding-sm: 25px 60px;
+$footer-padding: 30px 250px 100px;
+$nav-padding: 20px 100px;
+$nav-padding-md: 20px 50px;
+$case-study-padding: 100px 450px 100px 160px;
+$case-study-img-padding: 80px 250px;
+$link-padding: 12px 16px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    font-family: $primary-font;
+    color: $text-color;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $text-color;
+    }
+    h2, h3 {
+        font-weight: 600;
+        color: $text-color;
+    }
+    p, li {
+        font-family: $primary-font;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75rem;
+        color: $text-color;
+    }
+    a {
+        font-family: $primary-font;
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.75rem;
+        color: $text-color;
+        color: $text-color;
+    }
+    .gradient-text {
+        background: $gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    header {
+        z-index: 2;
+        position: sticky;
+        top: 0;
+        nav {
+            display: flex;
+            align-items: center;
+            padding: $nav-padding;
+            .logo {
+                margin-right: auto;
+                img {
+                    max-width: 45px;
+                }
+            }
+            .nav-links {
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    gap: 50px;
+                    li {
+                        padding: $link-padding;
+                        font-weight: 300;
+                        text-decoration: none;
+                        a {
+                            text-decoration: none;
+                        }
+                        a:hover {
+                            text-decoration: underline;
+                            color: $link-color;
+                        }
+                    }
+                }
+            }
+            
+            .toggle-btn {
+                color: $text-color;
+                font-size: 1.5rem;
+                cursor: pointer;
+                display: none;
+            }
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            right: 50px;
+            top: 70px;
+            width: 200px;
+            background-color: $primary-color;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 0;
+            transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                li {
+                    padding: $link-padding;
+                    font-weight: 300;
+                    text-align: center;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                        color: $text-color;
+                    }
+                }
+            }
+        }
+        .dropdown-menu.open {
+            height: 165px;
+        }
+    }
+    .wave-divider {
+        max-width: 100%;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // index styles
+    .hero-section {
+        padding: $section-padding;
+        a {
+            font-weight: 500;
+        }
+        a:hover {
+            color: $link-color;
+        }
+    }
+    .selected-work-section {
+        padding: $section-padding;
+        display: flex;
+        flex-flow: column;
+        gap: 100px;
+        .case-study-card {
+            display: flex;
+            max-width: 1300px;
+            h2 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+            .case-study-card-text {
+                display: flex;
+                flex-flow: column;
+                max-width: 40%;
+                margin-right: auto;
+                justify-content: center;
+                gap: 50px;
+                .case-study-card-title {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        font-style: italic;
+                        margin-top: 20px;
+                    }
+                }
+                .case-study-card-description {
+                    .case-study-description {
+                        font-size: 1.25rem;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .case-study-card-img {
+                max-width: 400px;
+                a {
+                    max-width: 40%;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+            .case-study-card-img:hover {
+                transform: rotate(5deg);
+            }
+        }
+    }
+    footer {
+        padding: $footer-padding;
+        display: flex;
+        flex-flow: column;
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            a {
+                padding: $link-padding;
+            }
+            a:hover {
+                transform: rotate(20deg);
+            }
+        }
+    }
+
+    //case study styles
+    .wave-divider-sm {
+        text-align: center;
+        img {
+            max-width: 80%;
+        }
+        
+    }
+    .case-study-title {
+        padding: $case-study-padding;
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+    .case-study-cover-img {
+        background-color: $secondary-color;
+        padding: 50px 0px;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 15%;
+        }
+        .browser {
+            flex-basis: 50%;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .case-study-section {
+        padding: $case-study-padding;
+        display: flex;
+        flex-flow: row;
+        gap: 100px;
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .section-number {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            column-gap: 50px;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+        .highlight {
+            padding: 0px 20px;
+            border: 1px $text-color dashed;
+            border-radius: 10px;
+            background-color: white;
+            .problem-statement {
+                margin: 20px 0px;
+                font-size: 1.5rem;
+                font-style: italic; 
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                margin: 20px 0px;
+            }
+            h3 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+            
+        }
+        .two-columns {
+            display: flex;
+            flex-flow: row;
+            gap: 50px;
+            .column {
+                max-width: 50%;
+                max-height: 100%;
+            }
+            .design-goals {
+                background-color: white;
+                border: 1px $text-color dashed;
+                border-radius: 10px;
+                padding: 20px;
+                min-height: 100%;
+                flex-basis: 50%;
+                h3 {
+                    margin-bottom: 10px;
+                    margin-top: 0;
+                }
+                h4 {
+                    font-weight: 500;
+                }
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+        .case-study-article-img {
+            figure {
+                text-align: center;
+                img {
+                    border-radius: 10px;
+                }
+            }
+        }
+        .case-study-article-img-mockup {
+            display: flex;
+            flex-flow: column;
+            padding: 0;
+            gap: 30px;
+            figure {
+                margin: 0;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+                img {
+                    max-width: 50%;
+                }
+                figcaption {
+                    margin-top: 0;
+                    max-width: 100%;
+                    font-weight: 300;
+                    line-height: 28px;;
+                }
+            }
+        }
+    }
+    .case-study-img {
+        padding: $case-study-img-padding;
+        figure {
+            max-width: 100%;
+            text-align: center;
+            img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+            figcaption {
+                font-size: 1rem;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+
+    // about.html styles
+    .about-main {
+        padding: $section-padding;
+        display: flex;
+        flex-flow: column;
+        gap: 50px;
+        h2 {
+            margin-top: 0;
+        }
+    }
+    .about-intro {
+        display: flex;
+        flex-flow: row;
+        gap: 100px;
+        img {
+            flex-basis: 30%;
+        }
+        .about-intro-text {
+            flex-basis: 60%;
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+            h1 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+            a {
+                font-weight: 600;
+            }
+            a:hover {
+                color: $link-color;
+            }
+        }
+    }
+    .about-edu {
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        h3 {
+            font-size: 1rem;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 50px;
+    }
+}
+
+
+// media query for tablet
+@media (max-width:992px) {
+    body {
+        h1 {
+            font-size: 2rem;
+        }
+        header {
+            nav {
+                padding: $nav-padding-md;
+                .nav-links {
+                    display: none;
+                }
+                .toggle-btn {
+                    display: block;
+                }
+            }
+            .dropdown-menu {
+                display: block;
+            }
+        }
+        .hero-section {
+            padding: $section-padding-md;
+        }
+        .selected-work-section {
+            padding: $section-padding-md;
+            gap: 50px;
+            .case-study-card {
+                max-width: 100%;
+                .case-study-card-text {
+                    max-width: 50%;
+                    gap: 30px;
+                    .case-study-card-title {
+                        h2 {
+                            font-size: 1.25rem;
+                        }
+                    }
+                    .case-study-card-description {
+                        .case-study-description {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+                .case-study-card-img {
+                    max-width: 40%;
+                }
+            }
+        }
+
+        // case study styles
+        .case-study-title {
+            padding: $section-padding-md;
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+        .case-study-section {
+            padding: $section-padding-md;
+            .case-study-content {
+                max-width: 100%;
+                iframe {
+                    max-width: 100%;
+                }
+            }
+        }
+        .case-study-img {
+            padding: $section-padding-md;
+            figure {
+                max-width: 100%;
+                img {
+                    max-width: 100%;
+                    border-radius: 10px;
+                }
+                figcaption {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+        }
+        .about-main {
+            padding: $section-padding-md;
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+@media (max-width:640px) {
+    body {
+        nav {
+            padding: 20px 20px;
+            .logo {
+                img {
+                    max-width: 25px;
+                }
+                
+            }
+            .dropdown-menu {
+                right: 20px;
+            }
+        }
+        h1 {
+            font-size: 1.618rem;
+        }
+        .wave-divider {
+            img {
+                max-width: 100%;
+            }
+        }
+        .hero-section {
+            padding: $section-padding-sm;
+        }
+        .selected-work-section {
+            padding: $section-padding-sm;
+            .case-study-card {
+                flex-flow: column;
+                gap: 20px;
+                .case-study-card-text {
+                    max-width: 100%;
+                    gap: 10px;
+                    margin-right: 0;
+                    .case-study-card-title {
+                        h2 {
+                            font-size: 1rem;
+                        }
+                        p {
+                            font-size: 0.75rem;
+                            margin-top: 0px;
+                        }
+                    }
+                    .case-study-card-description {
+                        .case-study-description {
+                            font-size: 1rem;
+                            margin-bottom: 0px;
+                        }
+                        p {
+                            font-size: 0.75rem;
+                        }
+                    }
+                }
+                .case-study-card-img {
+                    max-width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    a {
+                        max-width: 70%;
+                    }
+                }
+            }
+        }
+        footer {
+            padding: $section-padding-sm;
+            h2 {
+                font-size: 1.618rem;
+            }
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+
+        // case study styles
+        .case-study-title {
+            padding: $section-padding-sm;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .case-study-section {
+            padding: $section-padding-sm;
+            h2 {
+                font-size: 1.25rem;
+            }
+            .section-number {
+                display: none;
+            }
+            .case-study-content {
+                .two-columns {
+                    flex-flow: column;
+                    gap: 20px;
+                    .design-goals {
+                        h3 {
+                            margin: 0;
+                        }
+                        h4 {
+                            margin: 15px 0px;
+                        }
+                    }
+                }
+                .highlight {
+                    .problem-statement {
+                        font-size: 1rem;
+                    }
+                }
+                .case-study-article-img-mockup {
+                    flex-flow: column;
+                    padding: 0;
+                    gap: 20px;
+                    figure {
+                        margin: 0;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
+                        img {
+                            max-width: 50%;
+                        }
+                        figcaption {
+                            margin-top: 0;
+                            max-width: 100%;
+                        }
+                    } 
+                }
+                .case-study-article-img {
+                    figure {
+                        figcaption {
+                            font-size: 0.75rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .case-study-img {
+            padding: $section-padding-sm;
+            figure {
+                figcaption {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        // about styles
+        .about-main {
+            padding: $section-padding-sm;
+            .about-intro {
+                flex-flow: column;
+                gap: 20px;
+                .about-intro-img {
+                    img {
+                        max-width: 45%;
+                    }
+                }
+                .about-intro-text {
+                    h1 {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .grid-container {
+                h2 {
+                    font-size: 1.25rem;
+                }
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+    }
+}
