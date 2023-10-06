@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #FFFDF7;
+  background-color: #FFFEFC;
   font-family: Be Vietnam Pro, sans-serif;
   color: #021620;
 }
@@ -163,7 +163,7 @@ body .selected-work-section .case-study-card .case-study-card-text {
   max-width: 100%;
   margin-right: auto;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 body .selected-work-section .case-study-card .case-study-card-text h2 {
   font-size: 1.5rem;
@@ -220,7 +220,7 @@ body .wave-divider-sm img {
   max-width: 80%;
 }
 body .case-study-title {
-  padding: 100px 450px 100px 160px;
+  padding: 100px 450px 100px 200px;
 }
 body .case-study-title h1 {
   font-size: 2.5rem;
@@ -229,7 +229,7 @@ body .case-study-title h2 {
   font-size: 1.5rem;
   font-weight: 300;
 }
-body .case-study-cover-img {
+body .case-study-cover-img-uinv {
   background-color: #E8EBFF;
   padding: 50px 0px;
   display: flex;
@@ -237,28 +237,41 @@ body .case-study-cover-img {
   justify-content: center;
   align-items: center;
 }
-body .case-study-cover-img img {
+body .case-study-cover-img-uinv img {
   max-width: 10%;
 }
-body .case-study-cover-img .browser {
+body .case-study-cover-img-uinv .browser {
   flex-basis: 35%;
 }
-body .case-study-cover-img .browser img {
+body .case-study-cover-img-uinv .browser img {
   max-width: 100%;
 }
+body .case-study-cover-img-yelp {
+  background-color: #DCEDF6;
+  padding: 50px 0px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+body .case-study-cover-img-yelp img {
+  max-width: 10%;
+}
 body .case-study-section {
-  padding: 100px 450px 100px 160px;
+  padding: 100px 450px 100px 200px;
   display: flex;
   flex-flow: row;
   gap: 100px;
 }
 body .case-study-section h3 {
+  margin-top: 30px;
   font-size: 1rem;
   font-weight: 600;
 }
 body .case-study-section .section-number {
   font-size: 1.5rem;
   font-weight: 600;
+  display: none;
 }
 body .case-study-section .grid-container {
   display: grid;
@@ -281,6 +294,7 @@ body .case-study-section .highlight .problem-statement {
   margin: 20px 0px;
   font-size: 1.5rem;
   font-style: italic;
+  line-height: 2.5rem;
 }
 body .case-study-section .highlight ul {
   list-style: none;
@@ -332,20 +346,21 @@ body .case-study-section .case-study-article-img figure img {
 }
 body .case-study-section .case-study-article-img-mockup {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   padding: 0;
   gap: 30px;
 }
 body .case-study-section .case-study-article-img-mockup figure {
   margin: 0;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  gap: 50px;
 }
 body .case-study-section .case-study-article-img-mockup figure img {
-  max-width: 50%;
+  max-width: 30%;
 }
 body .case-study-section .case-study-article-img-mockup figure figcaption {
   margin-top: 0;
