@@ -13,7 +13,7 @@ $primary-font: Be Vietnam Pro, sans-serif;
 $section-padding: 100px 250px;
 $section-padding-md: 50px 120px;
 $section-padding-sm: 25px 60px;
-$footer-padding: 30px 250px 100px;
+$footer-padding: 30px 250px 50px;
 $nav-padding: 20px 100px;
 $nav-padding-md: 20px 50px;
 $case-study-padding: 100px 450px 100px 200px;
@@ -222,14 +222,16 @@ body {
         padding: $footer-padding;
         display: flex;
         flex-flow: column;
+        align-items: center;
         h2 {
             font-size: 2rem;
-            text-align: center;
+        }
+        p {
+            font-size: 0.875rem;
         }
         .footer-links {
             display: flex;
             gap: 2rem;
-            justify-content: center;
             a {
                 padding: $link-padding;
             }
@@ -361,7 +363,7 @@ body {
                     font-weight: 500;
                 }
                 ul {
-                    margin: 0;
+                    margin-top: 10px;
                 }
             }
         }
@@ -500,22 +502,18 @@ body {
             gap: 50px;
             .case-study-card {
                 max-width: 100%;
-                .case-study-card-text {
-                    max-width: 50%;
-                    gap: 30px;
-                    .case-study-card-title {
-                        h2 {
-                            font-size: 1.25rem;
-                        }
-                    }
-                    .case-study-card-description {
-                        .case-study-description {
-                            font-size: 1.25rem;
-                        }
-                    }
-                }
                 .case-study-card-img {
-                    max-width: 40%;
+                    max-width: 100%;
+                }
+                .case-study-card-text {
+                    max-width: 100%;
+                    gap: 15px;
+                    h2 {
+                        font-size: 1.375rem;
+                    }
+                    h3 {
+                        font-size: 1.125rem;
+                    }
                 }
             }
         }
@@ -534,6 +532,41 @@ body {
             padding: $section-padding-md;
             .case-study-content {
                 max-width: 100%;
+                .grid-container {
+                    display: flex;
+                    flex-flow: column;
+                    gap: 20px;
+                    .grid-item-1 {
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                    .grid-item-2 {
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                    .grid-item-3 {
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                    .grid-item-4 {
+                        h3 {
+                            margin: 0;
+                        }
+                    }
+                }
+                .two-columns {
+                    .column {
+                        max-width: 100%;
+                    }
+                }
+                .highlight {
+                    .problem-statement {
+                        line-height: 1.75rem;
+                    }
+                }
                 iframe {
                     max-width: 100%;
                 }
@@ -592,40 +625,26 @@ body {
         .hero-section {
             padding: $section-padding-sm;
         }
+        
         .selected-work-section {
             padding: $section-padding-sm;
+            gap: 50px;
             .case-study-card {
-                flex-flow: column;
-                gap: 20px;
+                max-width: 100%;
+                .case-study-card-img {
+                    max-width: 100%;
+                }
                 .case-study-card-text {
                     max-width: 100%;
                     gap: 10px;
-                    margin-right: 0;
-                    .case-study-card-title {
-                        h2 {
-                            font-size: 1rem;
-                        }
-                        p {
-                            font-size: 0.75rem;
-                            margin-top: 0px;
-                        }
+                    h2 {
+                        font-size: 1.25rem;
                     }
-                    .case-study-card-description {
-                        .case-study-description {
-                            font-size: 1rem;
-                            margin-bottom: 0px;
-                        }
-                        p {
-                            font-size: 0.75rem;
-                        }
+                    h3 {
+                        font-size: 1rem;
                     }
-                }
-                .case-study-card-img {
-                    max-width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    a {
-                        max-width: 70%;
+                    p {
+                        font-size: 0.875rem;
                     }
                 }
             }
