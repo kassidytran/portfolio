@@ -121,6 +121,15 @@ body .wave-divider img {
 }
 body .hero-section {
   padding: 100px 250px;
+  display: flex;
+  justify-content: center;
+}
+body .hero-section .hero-container {
+  max-width: 1200px;
+}
+body .hero-section h2 {
+  font-weight: 300;
+  margin-bottom: 100px;
 }
 body .hero-section a {
   font-weight: 500;
@@ -132,11 +141,15 @@ body .selected-work-section {
   padding: 100px 250px;
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  align-items: center;
   gap: 100px;
 }
 body .selected-work-section .case-study-card {
   display: flex;
-  max-width: 1300px;
+  flex-flow: column;
+  max-width: 1200px;
+  gap: 20px;
 }
 body .selected-work-section .case-study-card h2 {
   margin: 0;
@@ -147,33 +160,38 @@ body .selected-work-section .case-study-card p {
 body .selected-work-section .case-study-card .case-study-card-text {
   display: flex;
   flex-flow: column;
-  max-width: 40%;
+  max-width: 100%;
   margin-right: auto;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
-body .selected-work-section .case-study-card .case-study-card-text .case-study-card-title h2 {
+body .selected-work-section .case-study-card .case-study-card-text h2 {
   font-size: 1.5rem;
+  margin: 0;
 }
-body .selected-work-section .case-study-card .case-study-card-text .case-study-card-title p {
+body .selected-work-section .case-study-card .case-study-card-text p {
   font-style: italic;
-  margin-top: 20px;
+  margin: 0;
 }
-body .selected-work-section .case-study-card .case-study-card-text .case-study-card-description .case-study-description {
+body .selected-work-section .case-study-card .case-study-card-text h3 {
   font-size: 1.25rem;
-  margin-bottom: 20px;
+  font-style: none;
+  font-weight: 300;
+  margin: 0;
 }
 body .selected-work-section .case-study-card .case-study-card-img {
-  max-width: 400px;
+  max-width: 100%;
 }
 body .selected-work-section .case-study-card .case-study-card-img a {
-  max-width: 40%;
+  max-width: 100%;
 }
 body .selected-work-section .case-study-card .case-study-card-img a img {
   max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid transparent;
 }
-body .selected-work-section .case-study-card .case-study-card-img:hover {
-  transform: rotate(5deg);
+body .selected-work-section .case-study-card .case-study-card-img a img:hover {
+  border: 1px dashed #021620;
 }
 body footer {
   padding: 30px 250px 100px;
@@ -215,15 +233,15 @@ body .case-study-cover-img {
   background-color: #E8EBFF;
   padding: 50px 0px;
   display: flex;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
 body .case-study-cover-img img {
-  max-width: 15%;
+  max-width: 10%;
 }
 body .case-study-cover-img .browser {
-  flex-basis: 50%;
+  flex-basis: 35%;
 }
 body .case-study-cover-img .browser img {
   max-width: 100%;
@@ -298,6 +316,7 @@ body .case-study-section .two-columns .design-goals {
 body .case-study-section .two-columns .design-goals h3 {
   margin-bottom: 10px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 body .case-study-section .two-columns .design-goals h4 {
   font-weight: 500;
