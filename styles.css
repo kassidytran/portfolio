@@ -583,6 +583,10 @@ body .grid-container {
   body .case-study-section .case-study-content {
     max-width: 100%;
   }
+  body .case-study-section .case-study-content .case-study-article-img {
+    padding: 0;
+    flex-flow: column;
+  }
   body .case-study-section .case-study-content .grid-container {
     display: flex;
     flex-flow: column;
@@ -757,7 +761,7 @@ body .grid-container {
   body .case-study-section .case-study-content .case-study-article-img-mockup {
     flex-flow: column;
     padding: 0;
-    gap: 20px;
+    gap: 10px;
   }
   body .case-study-section .case-study-content .case-study-article-img-mockup figure {
     margin: 0;

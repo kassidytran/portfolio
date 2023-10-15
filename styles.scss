@@ -616,6 +616,10 @@ body {
             padding: $section-padding-md;
             .case-study-content {
                 max-width: 100%;
+                .case-study-article-img {
+                    padding: 0;
+                    flex-flow: column;
+                }
                 .grid-container {
                     display: flex;
                     flex-flow: column;
@@ -833,7 +837,7 @@ body {
                 .case-study-article-img-mockup {
                     flex-flow: column;
                     padding: 0;
-                    gap: 20px;
+                    gap: 10px;
                     figure {
                         margin: 0;
                         display: flex;
